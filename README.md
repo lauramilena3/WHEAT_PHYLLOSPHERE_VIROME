@@ -95,9 +95,7 @@ snakemake \
     runWorkflow \
     --config \
         input_dir=/home/lmf/PhylloVir/VIRAL_WORLD/VIRAL_FRACTION/00_RAW_DATA \
-        ecc_memory=16000 \
-        subassembly=True \
-        additional_reference_contigs=/home/lmf/PhylloVir/VIRAL_WORLD/VIRAL_FRACTION/erwinia_pseudomonas_and_reference_phages.fasta \
+        ecc_memory=16000 \        additional_reference_contigs=/home/lmf/PhylloVir/VIRAL_WORLD/VIRAL_FRACTION/erwinia_pseudomonas_and_reference_phages.fasta \
         assembly_stats=True \
         subassembly=True \
         min_votu_length=10000 \
@@ -119,10 +117,6 @@ This configuration specified:
 * `--use-conda`: used the Conda environments specified by the workflow
 
 The absolute paths above correspond to the original computational environment and must be changed when reproducing the workflow on another system.
-
-**Note:** the recorded command contains the Snakemake `-n` (`--dry-run`) option. Therefore, as written, it performs a dry-run and reports the jobs that would be executed rather than executing them. If the production workflow was subsequently run without `-n`, the exact production command should also be recorded here.
-
-The repeated `subassembly=True` argument is retained above to reproduce the command as originally recorded.
 
 ## Computational environment
 
